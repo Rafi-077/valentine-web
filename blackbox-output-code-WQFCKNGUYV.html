@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine, Nikol? - From Rafi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating Hearts Particles -->
+    <div id="particles"></div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section">
+        <div class="hero-bg">
+            <div class="sparkles"></div>
+            <div class="floating-hearts"></div>
+            <div class="roses"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Will you be my Valentine, Nikol?</h1>
+            <p class="hero-subtitle">From your Rafi, with endless love...</p>
+            <div class="buttons">
+                <button id="yes-btn" class="btn yes">Yes ❤️</button>
+                <button id="no-btn" class="btn no">No 💔</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Message Section -->
+    <section id="message" class="section hidden">
+        <h2 class="section-title">A Message from Rafi to Nikol</h2>
+        <p class="love-message">My dearest Nikol, from the moment I met you, my world became brighter. Your smile lights up my days, and your love fills my heart with joy. Happy Valentine's Day, my forever love. ❤️</p>
+    </section>
+
+    <!-- Our Love Story Timeline -->
+    <section id="timeline" class="section hidden">
+        <h2 class="section-title">Our Love Story</h2>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-date">First Date</div>
+                <p>The day we shared our first laugh and knew it was special.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">Our First Kiss</div>
+                <p>A magical moment under the stars.</p>
+            </div>
+            <!-- Add more items as needed -->
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section id="gallery" class="section hidden">
+        <h2 class="section-title">Our Precious Memories</h2>
+        <div class="gallery-grid">
+            <img src="assets/photo1.jpg" alt="Memory 1" class="gallery-img">
+            <img src="assets/photo2.jpg" alt="Memory 2" class="gallery-img">
+            <!-- Add more images -->
+        </div>
+    </section>
+
+    <!-- Reasons Why I Love You Slider -->
+    <section id="reasons" class="section hidden">
+        <h2 class="section-title">Reasons Why I Love You</h2>
+        <div class="slider">
+            <div class="slide active">
+                <h3>Your Smile</h3>
+                <p>It brightens my darkest days.</p>
+            </div>
+            <div class="slide">
+                <h3>Your Kindness</h3>
+                <p>You make the world a better place.</p>
+            </div>
+            <!-- Add more slides -->
+        </div>
+        <button id="prev-slide" class="slider-btn"><i class="fas fa-chevron-left"></i></button>
+        <button id="next-slide" class="slider-btn"><i class="fas fa-chevron-right"></i></button>
+    </section>
+
+    <!-- Countdown Timer -->
+    <section id="countdown" class="section hidden">
+        <h2 class="section-title">Countdown to Valentine's Day</h2>
+        <div id="timer" class="timer"></div>
+    </section>
+
+    <!-- Final Section -->
+    <section id="final" class="section hidden">
+        <h2 class="final-title">Forever Yours, Rafi ❤️</h2>
+        <p class="final-subtitle">With all my heart, forever and always.</p>
+    </section>
+
+    <!-- Music Toggle -->
+    <button id="music-toggle" class="music-btn"><i class="fas fa-music"></i></button>
+    <audio id="bg-music" loop>
+        <source src="assets/romantic-music.mp3" type="audio/mp3"> <!-- Replace with your audio file -->
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
